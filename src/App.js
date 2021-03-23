@@ -38,7 +38,8 @@ function App() {
 					className={`${usernameInputFocus}`}
 					autoComplete="off"
 				></input>
-				<span data-placeholder="Username"></span>
+				<p>Username</p>
+				<span></span>
 			</div>
 			<div className="textb">
 				<input type="password" name="password"
@@ -48,7 +49,8 @@ function App() {
 					value={password}
 					className={`${passwordInputFocus}`}
 				></input>
-				<span data-placeholder="Password"></span>
+				<p>Password</p>
+				<span></span>
 			</div>
 			<button onClick={e => e.preventDefault()}>Login</button>
 			<div className="bottom-text">
