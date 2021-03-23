@@ -27,36 +27,38 @@ function App() {
 	}
 
 	return (
-		<form className="login-form">
-			<h1>Login</h1>
-			<div className="textb">
-				<input type="text" name="username"
-					onFocus={handleUsernameInputFocus}
-					onBlur={handleUsernameInputBlur}
-					onChange={e => setUsername(e.target.value)}
-					value={username}
-					className={`${usernameInputFocus}`}
-					autoComplete="off"
-				></input>
-				<p>Username</p>
-				<span></span>
-			</div>
-			<div className="textb">
-				<input type="password" name="password"
-					onFocus={handlePasswordInputFocus}
-					onBlur={handlePasswordInputBlur}
-					onChange={e => setPassword(e.target.value)}
-					value={password}
-					className={`${passwordInputFocus}`}
-				></input>
-				<p>Password</p>
-				<span></span>
-			</div>
-			<button onClick={e => e.preventDefault()}>Login</button>
-			<div className="bottom-text">
-				Don't have an account? <a href="/Signup">Sign up</a>
-			</div>
-		</form>
+		<div className="login-page">
+			<form className="login-form">
+				<h1>Login</h1>
+				<div className="textb">
+					<input type="text" name="username"
+						onFocus={handleUsernameInputFocus}
+						onBlur={handleUsernameInputBlur}
+						onChange={e => setUsername(e.target.value)}
+						value={username}
+						className={`${usernameInputFocus}`}
+						autoComplete="off"
+					></input>
+					<span className="input-label">Username</span>
+					<span className="input-underline"></span>
+				</div>
+				<div className="textb">
+					<input type="password" name="password"
+						onFocus={handlePasswordInputFocus}
+						onBlur={handlePasswordInputBlur}
+						onChange={e => setPassword(e.target.value)}
+						value={password}
+						className={`${passwordInputFocus}`}
+					></input>
+					<span className="input-label">Password</span>
+					<span className="input-underline"></span>
+				</div>
+				<button onClick={e => e.preventDefault()}>Login</button>
+				<div className="bottom-text">
+					Don't have an account? <a href="/Signup">Sign up</a>
+				</div>
+			</form>
+		</div>
 	);
 }
 

@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 
-#root {
+.login-page {
 	min-height: 100vh;
 	background: linear-gradient(120deg, #f72585, #8338ec);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -44,7 +44,7 @@ form h1 {
 	height: 40px;
 }
 
-.textb p{
+.textb .input-label{
 	position: absolute;
 	top: 50%;
 	left: 5px;
@@ -54,8 +54,7 @@ form h1 {
 	transition: 0.5s;
 }
 
-.textb span{
-	content: "";
+.textb .input-underline{
 	position: absolute;
 	left: 0;
 	top: 100%;
@@ -65,11 +64,11 @@ form h1 {
 	transition: 0.5s;
 }
 
-.focus ~ p {
+.focus ~ .input-label {
 	top: -5px;
 }
 
-.focus ~ span {
+.focus ~ .input-underline {
 	width: 100%;
 }
 
